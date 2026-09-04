@@ -3,22 +3,26 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
+  "description": "Site institucional responsivo desenvolvido para a equipe Bushido Jiu-Jitsu.",
+  "author": "Victor Hugo Correa",
+  "license": "MIT",
   "scripts": {
     "dev": "npx --yes serve .",
     "lint": "node --check script.js",
     "typecheck": "node --check script.js",
-    "test": "node --test tests/site.test.mjs",
-    "build": "node tests/build.mjs"
+    "optimize-images": "node scripts/optimize-images.mjs"
   },
-  "description": "",
-  "main": "script.js",
-  "directories": {
-    "doc": "docs",
-    "test": "tests"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "bushido",
+    "jiu-jitsu",
+    "bjj",
+    "brazilian-jiu-jitsu",
+    "frontend",
+    "website",
+    "html",
+    "css",
+    "javascript"
+  ],
   "devDependencies": {
     "sharp": "^0.35.3"
   }

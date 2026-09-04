@@ -1,0 +1,43 @@
+site_bushido_jiu_jitsu/
+│
+├── assets/
+│   ├── hero-bushido.png
+│   ├── hero-bushido.webp
+│   ├── hero-bushido.avif
+│   ├── hero-bushido-480w.webp
+│   ├── hero-bushido-800w.webp
+│   ├── hero-bushido-1200w.webp
+│   ├── hero-bushido-1600w.webp
+│   ├── hero-bushido-480w.avif
+│   ├── hero-bushido-800w.avif
+│   ├── hero-bushido-1200w.avif
+│   ├── hero-bushido-1600w.avif
+│   └── og-bushido.webp
+│
+├── docs/
+│   ├── preview.webp
+│   └── stories/
+│       └── 1.1-site-institucional-mobile-first.md
+│
+├── fonts/
+│   ├── fonts.css
+│   ├── SpaceGrotesk-300.ttf
+│   ├── SpaceGrotesk-400.ttf
+│   ├── SpaceGrotesk-500.ttf
+│   ├── SpaceGrotesk-600.ttf
+│   └── SpaceGrotesk-700.ttf
+│
+├── scripts/
+│   └── optimize-images.mjs
+│
+├── tests/
+│   ├── build.mjs
+│   └── site.test.mjs
+│
+├── .gitignore
+├── index.html
+├── package.json
+├── package-lock.json
+├── script.js
+├── style.css
+└── README.md

@@ -1,0 +1,117 @@
+script.js
+
+Uma melhoria futura
+
+Você possui dois listeners de scroll:
+
+um para o header;
+outro para o parallax.
+
+Não é necessariamente errado, mas dá para consolidar isso posteriormente em um único fluxo de scroll usando requestAnimationFrame
+
+assets/ — 🟡 PRECISA DE ATENÇÃO
+
+Pasta assets
+
+Aqui encontrei:
+
+hero-bushido.png
+
+hero-bushido.webp
+hero-bushido.avif
+
+hero-bushido-480w.webp
+hero-bushido-800w.webp
+hero-bushido-1200w.webp
+hero-bushido-1600w.webp
+
+hero-bushido-480w.avif
+hero-bushido-800w.avif
+hero-bushido-1200w.avif
+hero-bushido-1600w.avif
+
+og-bushido.webp
+Isso é errado?
+
+Não.
+
+Na verdade, as versões responsivas fazem sentido porque seu HTML realmente as utiliza.
+
+Porém...
+
+Você possui:
+
+PNG original;
+WebP original;
+AVIF original;
+4 WebPs;
+4 AVIFs;
+OG image.
+
+São muitas versões da mesma imagem.
+
+Isso só vale a pena se estiver sendo utilizado corretamente.
+
+⚠️ Problema que encontrei
+
+No HTML você faz preload de:
+
+assets/hero-bushido.webp
+
+e também:
+
+assets/hero-bushido.avif
+
+Ao mesmo tempo, o <picture> decide qual formato utilizar.
+
+Isso pode acabar fazendo o navegador baixar recursos que não serão utilizados.
+
+Eu mudaria essa parte.
+
+package.json — 🟠 PRECISA SER CORRIGIDO
+
+`package.json` no GitHub
+
+Atualmente:
+
+"description": "",
+"keywords": [],
+"author": "",
+
+Isso deixa o projeto com aparência inacabada.
+
+Eu preencheria.
+
+Por exemplo:
+
+"description": "Site institucional responsivo desenvolvido para a equipe Bushido Jiu-Jitsu.",
+"keywords": [
+  "brazilian-jiu-jitsu",
+  "jiu-jitsu",
+  "bjj",
+  "website",
+  "frontend",
+  "html",
+  "css",
+  "javascript"
+],
+"author": "Victor Hugo Correa"
+
+
+
+
+
+README.md          ✅ novo
+.gitignore         ✅ limpo
+package.json       ✅ corrigido
+package-lock.json  ✅ manter
+index.html         🟡 corrigir dados/preload
+style.css          ✅ manter
+script.js          ✅ manter
+fonts/             ✅ manter
+assets/            ✅ manter
+scripts/           ✅ manter
+samples/           ❌ remover
+.env.example       ❌ remover
+tela-1.webp        🟡 mover para docs ou remover
+tests/             🟡 criar futuramente
