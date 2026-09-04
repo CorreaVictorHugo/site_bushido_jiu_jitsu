@@ -8,11 +8,8 @@ O projeto foi pensado para fugir do padrão tradicional de landing pages de acad
 
 ## 📸 Preview
 
-![Bushido Jiu-Jitsu — Preview](https://bushido-jiu-jitsu-old-scholl.vercel.app/)
-
-> A imagem acima pode ser substituída pelo screenshot final do projeto.
-
----
+![Bushido Jiu-Jitsu — Preview]
+(https://bushido-jiu-jitsu-old-scholl.vercel.app/)
 
 ## ✨ Sobre o projeto
 
