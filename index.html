@@ -1,0 +1,176 @@
+<!doctype html>
+<!--
+THESIS: O tatame é território de formação; recusamos a landing page genérica de academia.
+OWN-WORLD: Preto, papel, vermelho Bushido, fotografia documental, linhas rígidas e tipo condensado.
+STORY: O visitante reconhece a equipe, entende seus valores e percorre sua memória sem uma oferta comercial.
+FIRST VIEWPORT: Foto em tela cheia, marca no topo e manifesto curto ancorado embaixo; o scroll é a ação.
+FORM: Pôster editorial esportivo, direção fixada pela referência do usuário; sem seed por ser direção vinculante.
+-->
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="description" content="Bushido — jiu-jitsu, disciplina e evolução coletiva dentro e fora do tatame." />
+    <meta name="theme-color" content="#0a0a0a" />
+    <title>Bushido — Jiu-Jitsu</title>
+    <link rel="preload" as="style" href="fonts/fonts.css" />
+    <link rel="stylesheet" href="fonts/fonts.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preload" as="image" href="assets/hero-bushido.webp" fetchpriority="high" />
+    <link rel="preload" as="image" href="assets/hero-bushido.avif" fetchpriority="high" />
+    <meta property="og:title" content="Bushido — Jiu-Jitsu" />
+    <meta property="og:description" content="Técnica sob pressão. Respeito em cada treino. Evolução construída em equipe." />
+    <meta property="og:image" content="assets/og-bushido.webp" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="canonical" href="https://bushido.team/" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SportsTeam",
+      "name": "Bushido",
+      "description": "Equipe de jiu-jitsu brasileira. Técnica sob pressão, respeito em cada treino, evolução construída em equipe.",
+      "url": "https://bushido.team/",
+      "logo": "https://bushido.team/assets/og-bushido.webp",
+      "sameAs": [],
+      "sport": "Brazilian Jiu-Jitsu",
+      "foundingDate": "2026"
+    }
+    </script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+
+    <header class="site-header" data-header>
+      <a class="brand" href="#inicio" aria-label="Bushido, início">
+        <span class="brand-mark" aria-hidden="true">武</span>
+        <span>Bushido</span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-principal">
+        <span class="menu-label">Menu</span>
+        <span class="menu-icon" aria-hidden="true"><i></i><i></i></span>
+      </button>
+
+      <nav class="site-nav" id="menu-principal" aria-label="Navegação principal">
+        <a href="#manifesto">Manifesto</a>
+        <a href="#pilares">Pilares</a>
+        <a href="#rotina">Rotina</a>
+        <a href="#memoria">Memória</a>
+      </nav>
+    </header>
+
+    <main id="conteudo">
+      <section class="hero" id="inicio" aria-labelledby="hero-title">
+        <picture>
+          <source type="image/avif" srcset="assets/hero-bushido-480w.avif 480w, assets/hero-bushido-800w.avif 800w, assets/hero-bushido-1200w.avif 1200w, assets/hero-bushido-1600w.avif 1600w" sizes="(max-width: 480px) 480px, (max-width: 800px) 800px, (max-width: 1200px) 1200px, 1600px" />
+          <source type="image/webp" srcset="assets/hero-bushido-480w.webp 480w, assets/hero-bushido-800w.webp 800w, assets/hero-bushido-1200w.webp 1200w, assets/hero-bushido-1600w.webp 1600w" sizes="(max-width: 480px) 480px, (max-width: 800px) 800px, (max-width: 1200px) 1200px, 1600px" />
+          <img src="assets/hero-bushido.png" alt="Dois atletas de jiu-jitsu treinando uma passagem de guarda no tatame" fetchpriority="high" width="1672" height="941" />
+        </picture>
+        <div class="hero-shade"></div>
+        <div class="hero-meta" aria-label="Identidade da equipe">
+          <!--<span>Jiu-jitsu</span><span>Equipe fechada</span><span>Imagem conceitual</span>-->
+        </div>
+        <div class="hero-copy">
+          <!--<p class="hero-kicker">Bushido / 道</p>-->
+          <h1 id="hero-title">Forjados<br />no tatame.</h1>
+          <p>Técnica sob pressão. Respeito em cada treino. Evolução construída em equipe.</p>
+        </div>
+        <a class="scroll-cue" href="#manifesto">Conheça a equipe <span aria-hidden="true">↓</span></a>
+      </section>
+
+      <section class="manifesto" id="manifesto" aria-labelledby="manifesto-title">
+        <div class="section-label"><span>Nosso código</span><span>Manifesto</span></div>
+        <h2 id="manifesto-title">Não treinamos para parecer fortes.</h2>
+        <p class="manifesto-punch">Treinamos para permanecer.</p>
+        <div class="manifesto-copy">
+          <p>Na Bushido, cada rola revela o que ainda precisa ser lapidado. Sem atalhos. Sem personagem. Apenas presença, repetição e confiança construída round após round.</p>
+          <p>O tatame coloca todos diante da mesma verdade: sempre existe algo para aprender. Uma posição que precisa de mais calma, um movimento que exige precisão ou uma decisão que deve acontecer no tempo certo.</p>
+          <p>Treinar é aceitar esse processo. É reconhecer limites sem se acomodar neles, ajudar o parceiro a evoluir e entender que nenhuma graduação substitui a disposição de continuar aprendendo.</p>
+          <p class="content-note">Texto-base editorial — será refinado com a história real da equipe.</p>
+        </div>
+      </section>
+
+      <section class="pillars" id="pilares" aria-labelledby="pillars-title">
+        <div class="section-label section-label--light"><span>O que nos move</span><span>Três pilares</span></div>
+        <h2 id="pillars-title">O caminho é coletivo.</h2>
+        <ol class="pillar-list">
+          <li><span class="pillar-number">01</span><div><h3>Técnica</h3><p>Entender antes de acelerar. Cada detalhe importa: a base, a postura, a pegada, o espaço e o momento de agir. A precisão transforma esforço em eficiência e permite que o jiu-jitsu continue funcionando mesmo sob pressão.</p></div></li>
+          <li><span class="pillar-number">02</span><div><h3>Constância</h3><p>Voltar ao tatame. Repetir, errar, corrigir e tentar novamente. O progresso não acontece em um único treino; ele aparece na soma dos dias em que escolhemos continuar, inclusive quando a evolução parece silenciosa.</p></div></li>
+          <li><span class="pillar-number">03</span><div><h3>Respeito</h3><p>Cuidar de quem treina ao lado é parte inseparável da evolução. Respeitamos o ritmo, os limites e a história de cada integrante, porque um treino forte também precisa ser seguro, consciente e coletivo.</p></div></li>
+        </ol>
+      </section>
+
+      <section class="routine" id="rotina" aria-labelledby="routine-title">
+        <div class="routine-heading">
+          <div class="section-label"><span>Dentro do treino</span><span>Rotina</span></div>
+          <h2 id="routine-title">Todo round<br />deixa uma marca.</h2>
+          <p class="routine-intro">Cada treino reúne preparação, estudo e prática. O objetivo não é apenas executar movimentos, mas aprender a tomar decisões com clareza enquanto o corpo está sob pressão.</p>
+        </div>
+        <div class="routine-sequence" aria-label="Sequência de um treino">
+          <article><span>Preparar</span><strong>Corpo presente.</strong><p>Aquecemos com propósito, despertando mobilidade, atenção e prontidão para treinar com segurança.</p></article>
+          <article><span>Aprender</span><strong>Técnica consciente.</strong><p>Estudamos posições por partes, entendendo não apenas o movimento, mas o problema que ele resolve.</p></article>
+          <article><span>Testar</span><strong>Pressão real.</strong><p>No treino situacional e no rola, a técnica encontra resistência, tempo e escolhas que não podem ser ensaiadas.</p></article>
+          <article><span>Evoluir</span><strong>Juntos, sempre.</strong><p>Terminamos cada sessão com mais experiência e com a responsabilidade de contribuir para o próximo treino.</p></article>
+        </div>
+      </section>
+
+      <section class="memory" id="memoria" aria-labelledby="memory-title">
+        <div class="memory-copy">
+          <div class="section-label section-label--light"><span>Arquivo vivo</span><span>Em construção</span></div>
+          <h2 id="memory-title">Nossa história ainda vai ocupar este espaço.</h2>
+          <p>A história de uma equipe não é feita somente de resultados. Ela também vive nos primeiros treinos, nas dificuldades superadas, nas graduações, nas viagens e nas pessoas que ajudaram a construir o caminho.</p>
+          <p>Este espaço será o arquivo vivo da Bushido. Atletas, campeonatos, encontros e momentos importantes entrarão aqui conforme o acervo da equipe for organizado.</p>
+          <p class="content-note content-note--light">Conteúdo em construção — os registros reais da equipe serão adicionados nas próximas versões.</p>
+        </div>
+        <div class="memory-grid" aria-label="Registros da equipe">
+          <article class="memory-card">
+            <div class="memory-card-image" aria-hidden="true"></div>
+            <div class="memory-card-content">
+              <span class="memory-card-number">01</span>
+              <time class="memory-card-date" datetime="2026">2026</time>
+              <h3 class="memory-card-title">Primeiro treino</h3>
+              <p class="memory-card-desc">O dia em que tudo começou. O tatame vazio, a expectativa, a primeira saudação.</p>
+            </div>
+          </article>
+          <article class="memory-card">
+            <div class="memory-card-image" aria-hidden="true"></div>
+            <div class="memory-card-content">
+              <span class="memory-card-number">02</span>
+              <time class="memory-card-date" datetime="2026">2026</time>
+              <h3 class="memory-card-title">Primeira graduação</h3>
+              <p class="memory-card-desc">Faixas brancas que ganharam sua primeira listra. O reconhecimento do esforço.</p>
+            </div>
+          </article>
+          <article class="memory-card">
+            <div class="memory-card-image" aria-hidden="true"></div>
+            <div class="memory-card-content">
+              <span class="memory-card-number">03</span>
+              <time class="memory-card-date" datetime="2026">2026</time>
+              <h3 class="memory-card-title">Primeiro campeonato</h3>
+              <p class="memory-card-desc">A equipe representada fora de casa. Vitórias, derrotas, aprendizado coletivo.</p>
+            </div>
+          </article>
+          <article class="memory-card">
+            <div class="memory-card-image" aria-hidden="true"></div>
+            <div class="memory-card-content">
+              <span class="memory-card-number">04</span>
+              <time class="memory-card-date" datetime="2026">2026</time>
+              <h3 class="memory-card-title">Encontro anual</h3>
+              <p class="memory-card-desc">Todos no mesmo tatame. Almoço, conversa, o vínculo que ultrapassa o treino.</p>
+            </div>
+          </article>
+        </div>
+        <div class="memory-mark" aria-hidden="true"><span>武</span><small>BUSHIDO</small></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand brand--footer" href="#inicio"><span class="brand-mark" aria-hidden="true">武</span><span>Bushido</span></a>
+      <p>Jiu-jitsu como caminho.<br />Equipe como base.</p>
+      <p class="footer-meta">Site-base / 2026<br />Conteúdo em evolução</p>
+      <a class="footer-contact" href="mailto:bushido@exemplo.com" rel="noopener">Contato / Imprensa / Parcerias</a>
+    </footer>
+  </body>
+</html>

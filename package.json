@@ -1,0 +1,25 @@
+{
+  "name": "site-bushido",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "npx --yes serve .",
+    "lint": "node --check script.js",
+    "typecheck": "node --check script.js",
+    "test": "node --test tests/site.test.mjs",
+    "build": "node tests/build.mjs"
+  },
+  "description": "",
+  "main": "script.js",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sharp": "^0.35.3"
+  }
+}
