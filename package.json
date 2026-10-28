@@ -7,9 +7,8 @@
   "author": "Victor Hugo Correa",
   "license": "MIT",
   "scripts": {
-    "dev": "npx --yes serve .",
-    "lint": "node --check script.js",
-    "typecheck": "node --check script.js",
+    "dev": "node scripts/serve.mjs",
+    "check": "node --check script.js && node --check scripts/serve.mjs && node --check scripts/optimize-images.mjs",
     "optimize-images": "node scripts/optimize-images.mjs"
   },
   "keywords": [

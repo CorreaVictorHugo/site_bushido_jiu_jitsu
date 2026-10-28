@@ -1,29 +1,20 @@
-
-
-# Environment & Secrets (AIOX)
+# Configuração local e credenciais
 .env
-.env.local
-.env.*.local
+.env.*
+!.env.example
 *.key
 *.pem
 
-# Dependencies (AIOX)
+# Dependências e arquivos gerados
 node_modules/
-node_modules
-
-# Build & Logs (AIOX)
 dist/
 build/
 *.log
-logs/
+.vercel/
 
-# IDE & OS (AIOX)
+# Editor e sistema operacional
 .DS_Store
 Thumbs.db
 .idea/
+.vscode/
 *.swp
-
-# AIOX Local (AIOX)
-.aiox-core/local/
-.claude/settings.local.json
-.aiox/install-log.txt

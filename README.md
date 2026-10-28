@@ -1,319 +1,59 @@
-# 🥋 Bushido — Jiu-Jitsu
+# Bushido — Jiu-Jitsu
 
-Site institucional desenvolvido para a equipe **Bushido Jiu-Jitsu**, com foco em identidade, filosofia, rotina de treinamento e história da equipe.
+Site institucional conceitual para a equipe Bushido Jiu-Jitsu. A página usa uma linguagem de pôster esportivo para apresentar o manifesto, os pilares, a rotina de treino e o espaço reservado à memória da equipe.
 
-O projeto foi pensado para fugir do padrão tradicional de landing pages de academias e apresentar a Bushido como uma equipe, uma comunidade e um caminho de evolução dentro e fora do tatame.
+**[Ver o site publicado](https://bushido-jiu-jitsu-old-scholl.vercel.app/)**
 
----
+![Prévia da abertura do site Bushido](assets/og-bushido.webp)
 
-## 📸 Preview
+## O que foi desenvolvido
 
-![Bushido Jiu-Jitsu — Preview]
-(https://bushido-jiu-jitsu-old-scholl.vercel.app/)
+- Página responsiva em HTML, CSS e JavaScript, sem framework ou etapa de build.
+- Abertura com imagem adaptada ao tamanho da tela em AVIF e WebP.
+- Navegação móvel, link para pular ao conteúdo, foco visível e suporte a movimento reduzido.
+- Tipografia local e identidade visual em preto, papel e vermelho.
+- Seção de memória preparada para receber registros reais da equipe, sem atribuir datas ou conquistas ainda não confirmadas.
 
-## ✨ Sobre o projeto
+## Estado do conteúdo
 
-O site apresenta a identidade da Bushido através de uma experiência visual editorial e esportiva.
+Este é um **projeto conceitual de portfólio**. O manifesto e os textos de treino são editoriais; a imagem de abertura é conceitual. Antes de usar o site como presença oficial da equipe, confirme textos, fotos, histórico, contato, endereço, horários e redes sociais com os responsáveis. Nenhum contato de exemplo é publicado na página.
 
-A proposta combina:
-
-- fotografia em destaque;
-- tipografia marcante;
-- contraste entre preto, papel e vermelho;
-- navegação simples;
-- animações sutis;
-- conteúdo institucional;
-- princípios da equipe;
-- rotina de treinamento;
-- espaço para construção da história da equipe.
-
-O projeto prioriza **experiência visual, performance, acessibilidade e responsividade**.
-
----
-
-## 🎯 Objetivos
-
-- apresentar a identidade da equipe;
-- comunicar os valores da Bushido;
-- criar uma experiência visual diferente de sites genéricos de academias;
-- funcionar bem em dispositivos móveis e desktops;
-- utilizar imagens otimizadas para diferentes tamanhos de tela;
-- oferecer navegação acessível;
-- manter uma estrutura simples e fácil de manter.
-
----
-
-## 🧭 Estrutura do site
-
-### Manifesto
-
-Apresenta a filosofia da equipe e sua visão sobre treinamento, disciplina, evolução e aprendizado.
-
-### Pilares
-
-Três princípios orientam a comunicação da equipe:
-
-- **Técnica**
-- **Constância**
-- **Respeito**
-
-### Rotina
-
-Apresenta a dinâmica de um treino:
-
-1. Preparar
-2. Aprender
-3. Testar
-4. Evoluir
-
-### Memória
-
-Área destinada à construção do arquivo histórico da equipe, incluindo treinos, graduações, campeonatos, encontros e outros momentos importantes.
-
-> O conteúdo histórico real será adicionado conforme o acervo da equipe for organizado.
-
----
-
-## 🛠️ Tecnologias
-
-- **HTML5**
-- **CSS3**
-- **JavaScript**
-- **Node.js**
-- **Sharp**
-
-### Recursos utilizados
-
-- HTML semântico
-- CSS Variables
-- CSS Grid
-- Flexbox
-- Media Queries
-- `IntersectionObserver`
-- `prefers-reduced-motion`
-- imagens responsivas com `<picture>`
-- formatos WebP e AVIF
-- Open Graph
-- Twitter Cards
-- Schema.org / JSON-LD
-- recursos de acessibilidade
-
----
-
-## ⚡ Performance
-
-As imagens principais possuem versões otimizadas para diferentes tamanhos de tela.
-
-São utilizados:
-
-- AVIF
-- WebP
-- diferentes resoluções
-- `srcset`
-- `sizes`
-- `fetchpriority`
-
-As imagens são processadas através do script:
-
-```text
-scripts/optimize-images.mjs
-```
-
-O script utiliza o pacote `sharp` para gerar versões otimizadas dos arquivos.
-
----
-
-## ♿ Acessibilidade
-
-O projeto possui práticas voltadas à acessibilidade, incluindo:
-
-- `lang="pt-BR"`
-- HTML semântico
-- textos alternativos nas imagens
-- navegação por teclado
-- `:focus-visible`
-- skip link para o conteúdo principal
-- atributos ARIA quando necessários
-- suporte a `prefers-reduced-motion`
-
----
-
-## 📁 Estrutura do projeto
-
-```text
-site_bushido_jiu_jitsu/
-│
-├── assets/
-│   ├── hero-bushido.png
-│   ├── hero-bushido.webp
-│   ├── hero-bushido.avif
-│   ├── hero-bushido-480w.webp
-│   ├── hero-bushido-800w.webp
-│   ├── hero-bushido-1200w.webp
-│   ├── hero-bushido-1600w.webp
-│   ├── hero-bushido-480w.avif
-│   ├── hero-bushido-800w.avif
-│   ├── hero-bushido-1200w.avif
-│   ├── hero-bushido-1600w.avif
-│   └── og-bushido.webp
-│
-├── docs/
-│   ├── preview.webp
-│   └── stories/
-│       └── 1.1-site-institucional-mobile-first.md
-│
-├── fonts/
-│   ├── fonts.css
-│   ├── SpaceGrotesk-300.ttf
-│   ├── SpaceGrotesk-400.ttf
-│   ├── SpaceGrotesk-500.ttf
-│   ├── SpaceGrotesk-600.ttf
-│   └── SpaceGrotesk-700.ttf
-│
-├── scripts/
-│   └── optimize-images.mjs
-│
-├── index.html
-├── script.js
-├── style.css
-├── package.json
-├── package-lock.json
-├── .gitignore
-└── README.md
-```
-
----
-
-## 🚀 Como executar
-
-### 1. Clone o repositório
+## Executar localmente
 
 ```bash
 git clone https://github.com/CorreaVictorHugo/site_bushido_jiu_jitsu.git
-```
-
-### 2. Entre na pasta
-
-```bash
 cd site_bushido_jiu_jitsu
-```
-
-### 3. Instale as dependências
-
-```bash
-npm install
-```
-
-### 4. Execute o projeto
-
-```bash
 npm run dev
 ```
 
-O projeto utiliza um servidor estático para disponibilizar os arquivos localmente.
+Abra [http://127.0.0.1:4173](http://127.0.0.1:4173). O servidor local usa apenas o Node.js; também é possível abrir `index.html` diretamente no navegador.
 
----
-
-## 🖼️ Otimização de imagens
-
-Para gerar as versões responsivas das imagens:
+Para verificar a sintaxe dos scripts:
 
 ```bash
+npm run check
+```
+
+Para recriar as versões otimizadas da imagem de abertura a partir de `assets/hero-bushido.png`:
+
+```bash
+npm ci
 npm run optimize-images
 ```
 
-O processo gera versões em diferentes resoluções e formatos para utilização pelo site.
+## Estrutura
 
----
-
-## 🔍 Verificação do JavaScript
-
-Para verificar a sintaxe do JavaScript:
-
-```bash
-npm run lint
+```text
+├── assets/                   # Imagem de origem, versões responsivas e imagem social
+├── fonts/                    # Space Grotesk e licença da fonte
+├── scripts/                  # Servidor local e otimização de imagens
+├── index.html                # Conteúdo e metadados
+├── style.css                 # Layout e identidade visual
+├── script.js                 # Menu e animações opcionais
+├── package.json
+└── README.md
 ```
 
-Também está disponível:
+## Autoria e direitos
 
-```bash
-npm run typecheck
-```
-
----
-
-## 📱 Responsividade
-
-O site foi desenvolvido considerando diferentes tamanhos de tela, com foco inicial em dispositivos móveis.
-
-A interface adapta:
-
-- navegação;
-- tipografia;
-- espaçamento;
-- imagens;
-- composição das seções;
-- cards;
-- elementos interativos.
-
----
-
-## 🎨 Identidade visual
-
-A direção visual utiliza uma linguagem inspirada em pôsteres esportivos e editoriais.
-
-### Conceitos
-
-**Preto**  
-Força, concentração e intensidade.
-
-**Papel**  
-Humanidade, materialidade e memória.
-
-**Vermelho**  
-Energia e identidade.
-
-**Tipografia**  
-Comunicação direta, rígida e contemporânea.
-
----
-
-## 📌 Estado do projeto
-
-**Em desenvolvimento.**
-
-A estrutura principal do site está implementada, enquanto algumas informações institucionais e registros históricos ainda serão substituídos pelo conteúdo oficial da equipe.
-
-Próximas etapas podem incluir:
-
-- adicionar informações reais da equipe;
-- adicionar história e registros fotográficos;
-- inserir dados de contato oficiais;
-- adicionar localização;
-- adicionar horários de treino;
-- integrar redes sociais;
-- melhorar SEO;
-- adicionar testes automatizados;
-- publicar a versão definitiva.
-
----
-
-## ⚠️ Conteúdo
-
-Algumas partes do conteúdo atual são textos-base desenvolvidos para estruturar a experiência do site.
-
-Informações institucionais, datas, registros históricos, contatos e demais dados deverão ser substituídos pelos dados oficiais da equipe antes da publicação definitiva.
-
----
-
-## 👨‍💻 Desenvolvimento
-
-Projeto desenvolvido por **Victor Hugo Correa**.
-
----
-
-## 📄 Licença
-
-Este projeto foi desenvolvido para a apresentação e utilização do site da equipe Bushido Jiu-Jitsu.
-
-A utilização, reprodução ou redistribuição dos conteúdos, imagens, identidade visual e materiais específicos do projeto deve respeitar seus respectivos direitos.
+Desenvolvido por **Victor Hugo Correa**. O código-fonte está sob a [licença MIT](LICENSE). Essa licença não cobre a marca Bushido, o conteúdo editorial nem as imagens do projeto. A fonte Space Grotesk é distribuída conforme a [SIL Open Font License](fonts/OFL.txt).

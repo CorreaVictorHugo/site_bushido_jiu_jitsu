@@ -32,14 +32,6 @@ async function optimize() {
     console.log(`✓ AVIF ${w}w`);
   }
 
-  // Full-size WebP (for preload)
-  await image.webp({ quality: 85, effort: 6 }).toFile(path.join(outputDir, 'hero-bushido.webp'));
-  console.log('✓ Full WebP');
-
-  // Full-size AVIF
-  await image.avif({ quality: 60, speed: 4 }).toFile(path.join(outputDir, 'hero-bushido.avif'));
-  console.log('✓ Full AVIF');
-
   // OG image (1200x630)
   await sharp(inputPath)
     .resize(1200, 630, { fit: 'cover', position: 'top' })
@@ -50,4 +42,7 @@ async function optimize() {
   console.log('\nDone!');
 }
 
-optimize().catch(console.error);
+optimize().catch((error) => {
+  console.error(error);
+  process.exitCode = 1;
+});
